@@ -3,17 +3,18 @@ import {
 	createUserWithEmailAndPassword,
 	getAuth,
 	signInWithEmailAndPassword,
-    signInWithPopup,
-    signOut
+	signInWithPopup,
+	signOut
 } from "firebase/auth";
 import PropTypes from "prop-types";
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
+import { app } from "../Firebase/firebase.config";
 
-const AuthContext = useState;
+const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-	const Auth = getAuth();
+	const Auth = getAuth(app);
 	const googleProvider = new GoogleAuthProvider();
 	const [user, setUser] = useState(null);
 	const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ const AuthProvider = ({ children }) => {
 		setLoading(true);
 		const unsubscribe = Auth.onAuthStateChanged((user) => {
 			if (user) {
-				setLoading(true);
+				setLoading(false);
 				setUser(user);
 			} else {
 				setLoading(false);
@@ -30,36 +31,41 @@ const AuthProvider = ({ children }) => {
 			}
 		});
 
-		return () => unsubscribe();
-	});
+		return () => {
+			setLoading(false);
+			unsubscribe();
+		};
+	}, []);
 
 	const signUp = (email, password) => {
+		setLoading(true);
 		return createUserWithEmailAndPassword(Auth, email, password);
 	};
 
 	const signIn = (email, password) => {
+		setLoading(true);
 		return signInWithEmailAndPassword(Auth, email, password);
 	};
 
-    const logOut = () => {
-        return signOut(Auth);
-    }
+	const logOut = () => {
+		return signOut(Auth);
+	};
 
-    const googleSignIn = () => {
-        return signInWithPopup(Auth, googleProvider);
-    }
+	const googleSignIn = () => {
+		return signInWithPopup(Auth, googleProvider);
+	};
 
 	const authObj = {
 		user,
 		signUp,
 		signIn,
-        logOut,
-        googleSignIn,
-        loading
+		logOut,
+		googleSignIn,
+		loading
 	};
 
 	return (
-		<AuthContext.provider value={authObj}>{children}</AuthContext.provider>
+		<AuthContext.Provider value={authObj}>{children}</AuthContext.Provider>
 	);
 };
 
