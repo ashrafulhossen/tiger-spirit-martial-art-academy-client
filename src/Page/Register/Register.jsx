@@ -7,11 +7,12 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Register = () => {
-	const { signUp, googleSignIn,githubSignIn } = useContext(AuthContext);
+	const { signUp, googleSignIn, githubSignIn } = useContext(AuthContext);
 	const {
 		register,
 		handleSubmit,
 		watch,
+		reset,
 		formState: { errors }
 	} = useForm();
 	const [showPassword, setShowPassword] = useState(false);
@@ -22,14 +23,16 @@ const Register = () => {
 		signUp(email, password)
 			.then((result) => {
 				const user = result.user;
-				console.log(user);
 				updateProfile(user, {
 					displayName: name,
 					photoURL: image || "",
 					phoneNumber: phone
 				})
-					.then(() => console.log("user data updated~"))
+					.then(() => console.log("user data updated"))
 					.catch((err) => console.log(err.message));
+
+				console.log(user);
+				reset();
 			})
 			.catch((err) => {
 				console.log(err.message);
@@ -150,8 +153,8 @@ const Register = () => {
 										{...register("password", {
 											required: true,
 											pattern:
-												/^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=~`[\]{}|:;"'<>,.?/])(.{8,})$/i,
-											minLength: 8
+												/^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=~`[\]{}|:;"'<>,.?/])(.{6,})$/i,
+											minLength: 6
 										})}
 									/>
 									<span
@@ -244,10 +247,16 @@ const Register = () => {
 							<span className="w-full h-0 block border border-zinc-500"></span>
 						</p>
 						<div className="grid grid-cols-2 w-full gap-6 mb-6">
-							<button onClick={googleSignIn} className="text-xl btn bg-zinc-300">
+							<button
+								onClick={googleSignIn}
+								className="text-xl btn bg-zinc-300"
+							>
 								<FaGoogle className="w-6 h-6 mr-1" /> Google
 							</button>
-							<button onClick={githubSignIn} className="text-xl btn bg-zinc-300">
+							<button
+								onClick={githubSignIn}
+								className="text-xl btn bg-zinc-300"
+							>
 								<FaGithub className="w-6 h-6 mr-1" /> Github
 							</button>
 						</div>

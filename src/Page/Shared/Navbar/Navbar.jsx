@@ -1,16 +1,23 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useContext } from "react";
+import { HiUserCircle } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../AuthProvider/AuthProvider";
 import logo from "/assets/logo-dark.svg";
 
 const Navbar = () => {
+	const { user, logOut } = useContext(AuthContext);
+
 	const menuItems = (
 		<>
 			<li>
 				<NavLink
 					to={"/"}
 					className={({ isActive }) =>
-						`navlink ${isActive && "border-b-2 border-zinc-600"}`
+						`navlink ${
+							isActive &&
+							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+						}`
 					}
 				>
 					Home
@@ -20,7 +27,10 @@ const Navbar = () => {
 				<NavLink
 					to={"/instructors"}
 					className={({ isActive }) =>
-						`navlink ${isActive && "border-b-2 border-zinc-600"}`
+						`navlink ${
+							isActive &&
+							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+						}`
 					}
 				>
 					Instructors
@@ -30,7 +40,10 @@ const Navbar = () => {
 				<NavLink
 					to={"/classes"}
 					className={({ isActive }) =>
-						`navlink ${isActive && "border-b-2 border-zinc-600"}`
+						`navlink ${
+							isActive &&
+							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+						}`
 					}
 				>
 					Classes
@@ -40,21 +53,45 @@ const Navbar = () => {
 				<NavLink
 					to={"/dashboard"}
 					className={({ isActive }) =>
-						`navlink ${isActive && "border-b-2 border-zinc-600"}`
+						`navlink ${
+							isActive &&
+							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+						}`
 					}
 				>
 					Dashboard
 				</NavLink>
 			</li>
 			<li>
-				<NavLink
-					to={"/authentication/login"}
-					className={({ isActive }) =>
-						`navlink ${isActive && "border-b-2 border-zinc-600"}`
-					}
-				>
-					Login
-				</NavLink>
+				{user ? (
+					<div className="flex">
+						<button
+							onClick={logOut}
+							className="navlink"
+						>
+							Logout
+						</button>
+						<div>
+							{user?.photoURL ? (
+								<img className="w-10 h-10 object-scale-down rounded-full" src={user.photoURL} alt="user image" />
+							) : (
+								<HiUserCircle className="w-10 h-10 text-black" />
+							)}
+						</div>
+					</div>
+				) : (
+					<NavLink
+						to={"/authentication/login"}
+						className={({ isActive }) =>
+							`navlink ${
+								isActive &&
+								"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+							}`
+						}
+					>
+						Login
+					</NavLink>
+				)}
 			</li>
 		</>
 	);
@@ -100,7 +137,7 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<div className="navbar-end w-0 lg:w-3/5">
-				<ul className="menu menu-horizontal px-1 hidden lg:flex">
+				<ul className="items-center menu menu-horizontal px-1 hidden lg:flex">
 					{menuItems}
 				</ul>
 			</div>

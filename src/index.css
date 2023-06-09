@@ -11,5 +11,5 @@
 }
 
 .navlink {
-	@apply bg-transparent hover:bg-transparent rounded-none text-base font-semibold py-1 px-2 mr-3;
+	@apply bg-transparent hover:bg-transparent rounded-none text-base font-semibold py-1 px-2 mr-3 hover:scale-110 transition-all duration-300 hover:rounded-full;
 }

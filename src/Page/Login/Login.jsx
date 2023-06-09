@@ -10,6 +10,7 @@ const Login = () => {
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors }
 	} = useForm();
 	const [showPassword, setShowPassword] = useState(false);
@@ -17,7 +18,10 @@ const Login = () => {
 	const onSubmit = (data) => {
 		const { email, password } = data;
 		signIn(email, password)
-			.then(() => console.log("User logged in"))
+			.then(() => {
+				console.log("User logged in");
+				reset();
+			})
 			.catch((err) => console.log(err.message));
 	};
 
@@ -67,8 +71,8 @@ const Login = () => {
 									className="input input-bordered w-full"
 									{...register("password", {
 										pattern:
-											/^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=~`[\]{}|:;"'<>,.?/])(.{8,})$/i,
-										minLength: 8
+											/^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=~`[\]{}|:;"'<>,.?/])(.{6,})$/i,
+										minLength: 6
 									})}
 								/>
 								<span
@@ -101,10 +105,16 @@ const Login = () => {
 							</span>
 							<span className="w-full h-0 block border border-zinc-500"></span>
 						</p>
-						<button onClick={googleSignIn} className="text-xl btn w-full mb-3">
+						<button
+							onClick={googleSignIn}
+							className="text-xl btn w-full mb-3"
+						>
 							<FaGoogle className="w-6 h-6 mr-1" /> Google
 						</button>
-						<button onClick={githubSignIn} className="text-xl btn w-full mb-3">
+						<button
+							onClick={githubSignIn}
+							className="text-xl btn w-full mb-3"
+						>
 							<FaGithub className="w-6 h-6 mr-1" /> Github
 						</button>
 						<p className="text-sm text-center mt-2">
