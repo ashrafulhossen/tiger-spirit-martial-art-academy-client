@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
 			{ path: "/dashboard", element: <Dashboard /> }
 		]
 	}, {path:"/authentication", element: <Authentication/> ,children: [
-		{path: "authentication/login", element: <Login/>},
-		{path: "authentication/register", element: <Register/>},
+		{path: "/authentication/login", element: <Login/>},
+		{path: "/authentication/register", element: <Register/>},
 	]}
 ]);

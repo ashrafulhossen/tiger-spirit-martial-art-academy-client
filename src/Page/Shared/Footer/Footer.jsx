@@ -14,7 +14,7 @@ import logo from "/assets/logo-dark.svg";
 
 const Footer = () => {
 	return (
-		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-8 md:px-10 lg:pl-16  py-20 bg-zinc-100 text-base-content">
+		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-8 md:px-10 lg:pl-16 pb-4 pt-20 bg-zinc-100 text-base-content">
 			<div className="min-w-[15rem] w-60 sm:p-0">
 				<Link
 					to={"/"}
@@ -80,6 +80,11 @@ const Footer = () => {
 				<p className="link link-hover text-center sm:text-left text-lg mb-3">
 					<FaYoutube className="inline-flex mr-2 bg-zinc-200 p-2 text-4xl rounded-md" />
 					Youtube
+				</p>
+			</div>
+			<div className="col-span-full border-t border-zinc-400 pt-4 w-full">
+				<p className="text-center text-zinc-500 text-sm">
+					Copyright © 2023 - All right reserved by Tiger Spirit Martial Art Academy
 				</p>
 			</div>
 		</footer>
