@@ -1,10 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Login = () => {
+	const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext);
 	const {
 		register,
 		handleSubmit,
@@ -13,13 +15,16 @@ const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
 
 	const onSubmit = (data) => {
-		console.log(data);
+		const { email, password } = data;
+		signIn(email, password)
+			.then(() => console.log("User logged in"))
+			.catch((err) => console.log(err.message));
 	};
 
 	const showPasswordEvent = () => setShowPassword(!showPassword);
 
 	return (
-		<div className="hero min-h-screen bg-base-200">
+		<div className="hero min-h-screen bg-base-200 py-20">
 			<div className="hero-content max-w-5xl mx-auto flex-col lg:flex-row gap-16">
 				<div className="text-center lg:text-left w-1/2">
 					<h1 className="text-5xl font-bold">Login now!</h1>
@@ -96,10 +101,10 @@ const Login = () => {
 							</span>
 							<span className="w-full h-0 block border border-zinc-500"></span>
 						</p>
-						<button className="text-xl btn w-full mb-3">
+						<button onClick={googleSignIn} className="text-xl btn w-full mb-3">
 							<FaGoogle className="w-6 h-6 mr-1" /> Google
 						</button>
-						<button className="text-xl btn w-full mb-3">
+						<button onClick={githubSignIn} className="text-xl btn w-full mb-3">
 							<FaGithub className="w-6 h-6 mr-1" /> Github
 						</button>
 						<p className="text-sm text-center mt-2">

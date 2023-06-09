@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Register = () => {
-	const { signUp, googleSignIn,githubSingIn } = useContext(AuthContext);
+	const { signUp, googleSignIn,githubSignIn } = useContext(AuthContext);
 	const {
 		register,
 		handleSubmit,
@@ -247,7 +247,7 @@ const Register = () => {
 							<button onClick={googleSignIn} className="text-xl btn bg-zinc-300">
 								<FaGoogle className="w-6 h-6 mr-1" /> Google
 							</button>
-							<button onClick={githubSingIn} className="text-xl btn bg-zinc-300">
+							<button onClick={githubSignIn} className="text-xl btn bg-zinc-300">
 								<FaGithub className="w-6 h-6 mr-1" /> Github
 							</button>
 						</div>
