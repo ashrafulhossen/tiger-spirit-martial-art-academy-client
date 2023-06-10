@@ -1,12 +1,15 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React from "react";
+import Banner from "../Banner/Banner";
 
 const Home = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+	return (
+		<div className="">
+			{/* Banner Section */}
+			<Banner />
 
-export default Home
+		</div>
+	);
+};
+
+export default Home;

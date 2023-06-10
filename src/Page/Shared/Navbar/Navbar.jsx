@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { HiUserCircle } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
-import logo from "/assets/logo-dark.svg";
+import logo from "/assets/logo1.png";
 
 const Navbar = () => {
 	const { user, logOut } = useContext(AuthContext);
@@ -16,7 +16,7 @@ const Navbar = () => {
 					className={({ isActive }) =>
 						`navlink ${
 							isActive &&
-							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+							"active-navlink"
 						}`
 					}
 				>
@@ -29,7 +29,7 @@ const Navbar = () => {
 					className={({ isActive }) =>
 						`navlink ${
 							isActive &&
-							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+							"active-navlink"
 						}`
 					}
 				>
@@ -42,7 +42,7 @@ const Navbar = () => {
 					className={({ isActive }) =>
 						`navlink ${
 							isActive &&
-							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+							"active-navlink"
 						}`
 					}
 				>
@@ -55,7 +55,7 @@ const Navbar = () => {
 					className={({ isActive }) =>
 						`navlink ${
 							isActive &&
-							"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+							"active-navlink"
 						}`
 					}
 				>
@@ -65,15 +65,16 @@ const Navbar = () => {
 			<li>
 				{user ? (
 					<div className="flex">
-						<button
-							onClick={logOut}
-							className="navlink"
-						>
+						<button onClick={logOut} className="navlink hover:text-purple-700">
 							Logout
 						</button>
 						<div>
 							{user?.photoURL ? (
-								<img className="w-10 h-10 object-scale-down rounded-full" src={user.photoURL} alt="user image" />
+								<img
+									className="w-10 h-10 object-scale-down rounded-full"
+									src={user.photoURL}
+									alt="user image"
+								/>
 							) : (
 								<HiUserCircle className="w-10 h-10 text-black" />
 							)}
@@ -85,7 +86,7 @@ const Navbar = () => {
 						className={({ isActive }) =>
 							`navlink ${
 								isActive &&
-								"border-b-2 border-zinc-600 scale-110 hover:scale-125 hover:rounded-none"
+								"active-navlink"
 							}`
 						}
 					>
@@ -97,7 +98,7 @@ const Navbar = () => {
 	);
 
 	return (
-		<div className="navbar bg-base-100 py-4 px-4">
+		<div className="navbar bg-purple-50 py-4 px-4 border-b border-purple-200">
 			<div className="navbar-start justify-between lg:justify-start w-full lg:w-2/5">
 				<div className="dropdown">
 					<label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -128,9 +129,11 @@ const Navbar = () => {
 					className="min-w-[180px] flex flex-col xs:flex-row items-center justify-center gap-2 mb-3"
 				>
 					<img src={logo} alt="logo" className="w-16" />
-					<h1 className="flex flex-col items-center justify-center space-y-1">
-						<span className="text-3xl font-bold">Tiger Spirit</span>
-						<span className="text-base tracking-wide">
+					<h1 className="flex flex-col items-center justify-center space-y-1 logo-gradient">
+						<span className="text-3xl font-extrabold uppercase text-transparent">
+							Tiger Spirit
+						</span>
+						<span className="text-base text-transparent capitalize tracking-widest font-semibold">
 							Martial Art Academy
 						</span>
 					</h1>

@@ -10,32 +10,34 @@ import {
 	FaYoutube
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "/assets/logo-dark.svg";
+import logo from "/assets/logo1.png";
 
 const Footer = () => {
 	return (
-		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-8 md:px-10 lg:pl-16 pb-4 pt-20 bg-zinc-100 text-base-content">
-			<div className="min-w-[15rem] w-60 sm:p-0">
+		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-4 md:px-10 lg:pl-16 pb-4 pt-20 bg-zinc-100 text-base-content">
+			<div className="min-w-[240px] w-[17rem] sm:p-0 ml-4 sm:ml-0">
 				<Link
 					to={"/"}
-					className="flex items-center justify-center gap-2 mb-3 mx-auto sm:mx-0"
+					className="w-[310px] flex items-center justify-center gap-2 mb-3 mx-auto sm:mx-0"
 				>
 					<img src={logo} alt="logo" className="w-16" />
-					<h1 className="flex flex-col items-center justify-center space-y-1">
-						<span className="text-3xl font-bold">Tiger Spirit</span>
-						<span className="text-base tracking-wide">
+					<h1 className="flex flex-col items-center justify-center space-y-1 logo-gradient">
+						<span className="text-[28px] font-extrabold uppercase text-transparent">
+							Tiger Spirit
+						</span>
+						<span className="text-base text-transparent capitalize font-semibold">
 							Martial Art Academy
 						</span>
 					</h1>
 				</Link>
-				<p className=" text-base text-center sm:text-left">
+				<p className="text-base text-center">
 					Martial arts are ancient combat practices encompassing
 					various disciplines and techniques. They promote physical
-					fitness, self-defense, discipline, and mental focus.
+					fitness, self-defense, discipline, and mental
 				</p>
 			</div>
-			<div className="max-w-[18rem] pl-2">
-				<span className="footer-title block text-center sm:text-left text-2xl">
+			<div className="max-w-[20rem] max-[699px]:w-[15rem] min-[700px]:w-auto pl-3">
+				<span className="footer-title block text-center sm:text-left text-2xl text-purple-700 opacity-70">
 					About Us
 				</span>
 				<p className="mt-4 text-center sm:text-left text-base mb-1 leading-6">
@@ -49,7 +51,7 @@ const Footer = () => {
 				</p>
 			</div>
 			<div>
-				<span className="footer-title block text-center sm:text-left text-2xl">
+				<span className="footer-title block text-center sm:text-left text-2xl text-purple-700 opacity-70">
 					Contact Info
 				</span>
 				<p className="mt-4 link link-hover text-center sm:text-left text-lg mb-2">
@@ -66,7 +68,7 @@ const Footer = () => {
 				</p>
 			</div>
 			<div>
-				<span className="footer-title block text-center sm:text-left text-2xl">
+				<span className="footer-title block text-center sm:text-left text-2xl text-purple-700 opacity-70">
 					Social Links
 				</span>
 				<p className="mt-6 link link-hover text-center sm:text-left text-lg mb-3">
@@ -84,7 +86,8 @@ const Footer = () => {
 			</div>
 			<div className="col-span-full border-t border-zinc-400 pt-4 w-full">
 				<p className="text-center text-zinc-500 text-sm">
-					Copyright © 2023 - All right reserved by Tiger Spirit Martial Art Academy
+					Copyright © 2023 - All right reserved by Tiger Spirit
+					Martial Art Academy
 				</p>
 			</div>
 		</footer>

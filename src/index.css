@@ -10,6 +10,26 @@
 	background-color: transparent;
 }
 
+.menu
+	:where(
+		li:not(.menu-title):not(.disabled)
+			> *:not(ul):not(details):not(.menu-title)
+	):not(.active):hover {
+	color: #6d28d9;
+}
+
 .navlink {
-	@apply bg-transparent hover:bg-transparent rounded-none text-base font-semibold py-1 px-2 mr-3 hover:scale-110 transition-all duration-300 hover:rounded-full;
+	@apply bg-transparent hover:bg-transparent rounded-none text-base text-purple-600 font-semibold py-1 px-2 mr-3 hover:scale-110 hover:text-white transition-all duration-300 hover:rounded-full;
+}
+
+.active-navlink {
+	@apply border-b-2 border-purple-600 scale-110 hover:scale-125 hover:rounded-none;
+}
+
+.logo-gradient {
+	@apply bg-gradient-to-b from-purple-500 via-purple-700 to-purple-950 bg-clip-text;
+}
+
+.gradient {
+	@apply bg-gradient-to-r from-purple-950 via-purple-700 to-purple-400;
 }
