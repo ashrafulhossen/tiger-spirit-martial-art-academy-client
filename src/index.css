@@ -26,10 +26,14 @@
 	@apply border-b-2 border-purple-600 scale-110 hover:scale-125 hover:rounded-none;
 }
 
-.logo-gradient {
-	@apply bg-gradient-to-b from-purple-500 via-purple-700 to-purple-950 bg-clip-text;
+.text-gradient {
+	@apply bg-gradient-to-b from-purple-500 via-purple-700 to-purple-950 bg-clip-text text-transparent;
 }
 
 .gradient {
 	@apply bg-gradient-to-r from-purple-950 via-purple-700 to-purple-400;
+}
+
+.purple-btn {
+	@apply btn bg-purple-600 hover:bg-purple-600 text-lg hover:scale-110 text-white disabled:bg-purple-500 disabled:text-white disabled:text-opacity-80 disabled:border disabled:border-purple-600
 }

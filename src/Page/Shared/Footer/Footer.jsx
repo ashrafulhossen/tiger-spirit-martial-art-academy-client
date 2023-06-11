@@ -14,14 +14,14 @@ import logo from "/assets/logo1.png";
 
 const Footer = () => {
 	return (
-		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-4 md:px-10 lg:pl-16 pb-4 pt-20 bg-purple-50 text-base-content">
+		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-4 md:px-10 lg:pl-16 pb-4 pt-20 bg-purple-100 text-base-content">
 			<div className="min-w-[240px] w-[17rem] sm:p-0 ml-4 sm:ml-0">
 				<Link
 					to={"/"}
 					className="w-[310px] flex items-center justify-center gap-2 mb-3 mx-auto sm:mx-0"
 				>
 					<img src={logo} alt="logo" className="w-16" />
-					<h1 className="flex flex-col items-center justify-center space-y-1 logo-gradient">
+					<h1 className="flex flex-col items-center justify-center space-y-1 text-gradient">
 						<span className="text-[28px] font-extrabold uppercase text-transparent">
 							Tiger Spirit
 						</span>

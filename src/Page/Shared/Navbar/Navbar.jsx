@@ -129,7 +129,7 @@ const Navbar = () => {
 					className="min-w-[180px] flex flex-col xs:flex-row items-center justify-center gap-2 mb-3"
 				>
 					<img src={logo} alt="logo" className="w-16" />
-					<h1 className="flex flex-col items-center justify-center space-y-1 logo-gradient">
+					<h1 className="flex flex-col items-center justify-center space-y-1 text-gradient">
 						<span className="text-3xl font-extrabold uppercase text-transparent">
 							Tiger Spirit
 						</span>
