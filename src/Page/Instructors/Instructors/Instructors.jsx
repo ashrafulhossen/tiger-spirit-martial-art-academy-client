@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import SingleInstructor from "../sections/SingleInstructor/SingleInstructor";
+import SingleInstructor from "../../../components/SingleInstructor/SingleInstructor";
 
 const Instructors = () => {
 	const instructors = useLoaderData();
@@ -15,6 +15,7 @@ const Instructors = () => {
 							<SingleInstructor
 								key={singleInstructor._id}
 								singleInstructor={singleInstructor}
+								showBtn={true}
 							/>
 						))}
 				</div>

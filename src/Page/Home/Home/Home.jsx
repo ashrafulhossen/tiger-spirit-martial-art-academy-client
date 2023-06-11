@@ -2,6 +2,7 @@
 import React from "react";
 import Banner from "../Sections/Banner/Banner";
 import PopularClasses from "../Sections/PopularClasses/PopularClasses";
+import PopularInstructors from "../Sections/PopularInstructors/PopularInstructors";
 
 const Home = () => {
 	return (
@@ -11,6 +12,9 @@ const Home = () => {
 
 			{/* Popular Classes Section */}
 			<PopularClasses />
+
+			{/* Popular Instructors Section */}
+			<PopularInstructors />
 		</div>
 	);
 };
