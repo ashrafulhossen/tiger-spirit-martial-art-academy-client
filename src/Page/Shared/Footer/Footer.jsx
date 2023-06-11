@@ -14,7 +14,7 @@ import logo from "/assets/logo1.png";
 
 const Footer = () => {
 	return (
-		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-4 md:px-10 lg:pl-16 pb-4 pt-20 bg-zinc-100 text-base-content">
+		<footer className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6 justify-items-center px-4 md:px-10 lg:pl-16 pb-4 pt-20 bg-purple-50 text-base-content">
 			<div className="min-w-[240px] w-[17rem] sm:p-0 ml-4 sm:ml-0">
 				<Link
 					to={"/"}
@@ -55,15 +55,15 @@ const Footer = () => {
 					Contact Info
 				</span>
 				<p className="mt-4 link link-hover text-center sm:text-left text-lg mb-2">
-					<FaEnvelope className="w-5 h-5 inline-flex mr-2" />
+					<FaEnvelope className="w-5 h-5 text-purple-600 inline-flex mr-2" />
 					tigerspirit@gmail.com
 				</p>
 				<p className="link link-hover text-center sm:text-left text-lg mb-2">
-					<FaPhoneAlt className="w-5 h-5 inline-flex mr-2" />
+					<FaPhoneAlt className="w-5 h-5 text-purple-600 inline-flex mr-2" />
 					+880 2 9556738
 				</p>
 				<p className="link link-hover text-center sm:text-left text-lg mb-2">
-					<FaMapMarkerAlt className="w-5 h-5 inline-flex mr-2" />
+					<FaMapMarkerAlt className="w-5 h-5 text-purple-600 inline-flex mr-2" />
 					89, Nawbpur Road, Dhaka
 				</p>
 			</div>
@@ -72,15 +72,15 @@ const Footer = () => {
 					Social Links
 				</span>
 				<p className="mt-6 link link-hover text-center sm:text-left text-lg mb-3">
-					<FaFacebookF className="inline-flex mr-2 bg-zinc-200 p-2 text-4xl rounded-md" />
+					<FaFacebookF className="inline-flex mr-2 bg-purple-200 p-2 text-purple-600 text-4xl rounded-md" />
 					Facebook
 				</p>
 				<p className="link link-hover text-center sm:text-left text-lg mb-3">
-					<FaTwitter className="inline-flex mr-2 bg-zinc-200 p-2 text-4xl rounded-md" />
+					<FaTwitter className="inline-flex mr-2 bg-purple-200 p-2 text-purple-600 text-4xl rounded-md" />
 					Twitter
 				</p>
 				<p className="link link-hover text-center sm:text-left text-lg mb-3">
-					<FaYoutube className="inline-flex mr-2 bg-zinc-200 p-2 text-4xl rounded-md" />
+					<FaYoutube className="inline-flex mr-2 bg-purple-200 p-2 text-purple-600 text-4xl rounded-md" />
 					Youtube
 				</p>
 			</div>
