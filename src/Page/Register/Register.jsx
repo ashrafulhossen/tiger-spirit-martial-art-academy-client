@@ -5,9 +5,11 @@ import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { postUser } from "../../hook/usePostUser";
 
 const Register = () => {
 	const { signUp, googleSignIn, githubSignIn } = useContext(AuthContext);
+	const userRole = "Admin";
 	const {
 		register,
 		handleSubmit,
@@ -23,12 +25,16 @@ const Register = () => {
 		signUp(email, password)
 			.then((result) => {
 				const user = result.user;
+
 				updateProfile(user, {
 					displayName: name,
 					photoURL: image || "",
 					phoneNumber: phone
 				})
-					.then(() => console.log("user data updated"))
+					.then(() => {
+						console.log("user data updated");
+						postUser(user, userRole);
+					})
 					.catch((err) => console.log(err.message));
 
 				console.log(user);

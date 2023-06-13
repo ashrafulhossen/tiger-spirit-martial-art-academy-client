@@ -27,6 +27,22 @@ const AuthProvider = ({ children }) => {
 			if (user) {
 				setLoading(false);
 				setUser(user);
+				const loggedUser = { email: user?.email };
+				const jwtToken = async () => {
+					const res = await fetch(
+						"http://localhost:5000/jwt",
+						{
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json"
+							},
+							body: JSON.stringify(loggedUser)
+						}
+					);
+					const data = await res.json();
+					localStorage.setItem("TigerSpiritMartialArtAcademyJWT", data.token);
+				};
+				jwtToken();
 			} else {
 				setLoading(false);
 				setUser(null);

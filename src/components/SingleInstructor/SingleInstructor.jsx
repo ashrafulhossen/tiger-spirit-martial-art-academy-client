@@ -5,7 +5,7 @@ import React from "react";
 const SingleInstructor = ({ singleInstructor, showBtn }) => {
 	const { _id, name, image, email } = singleInstructor;
 	return (
-		<div className="card w-full glass bg-purple-300">
+		<div className="card w-full glass bg-gradient-to-br from-purple-700 via-purple-400 to-purple-200">
 			<figure>
 				<img
 					className="h-72 w-full object-cover object-top"

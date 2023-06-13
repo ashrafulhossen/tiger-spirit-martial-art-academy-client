@@ -8,6 +8,14 @@ import logo from "/assets/logo1.png";
 const Navbar = () => {
 	const { user, logOut } = useContext(AuthContext);
 
+	const logOutEvent = () => {
+		logOut().then(() => {
+			localStorage.removeItem("TigerSpiritMartialArtAcademyJWT")
+		}).catch((err) => {
+			console.log(err.message);
+		})
+	}
+
 	const menuItems = (
 		<>
 			<li>
@@ -65,7 +73,7 @@ const Navbar = () => {
 			<li>
 				{user ? (
 					<div className="flex">
-						<button onClick={logOut} className="navlink hover:text-purple-700">
+						<button onClick={logOutEvent} className="navlink hover:text-purple-700">
 							Logout
 						</button>
 						<div>

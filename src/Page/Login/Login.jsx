@@ -2,11 +2,14 @@
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { postUser } from "../../hook/usePostUser";
 
 const Login = () => {
 	const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext);
+	const navigate = useNavigate();
+	const location = useLocation();
 	const {
 		register,
 		handleSubmit,
@@ -18,9 +21,11 @@ const Login = () => {
 	const onSubmit = (data) => {
 		const { email, password } = data;
 		signIn(email, password)
-			.then(() => {
-				console.log("User logged in");
+			.then((result) => {
+				postUser(result);
+				console.log("user logged in");
 				reset();
+				navigate(location?.state?.from?.pathname || "/");
 			})
 			.catch((err) => console.log(err.message));
 	};

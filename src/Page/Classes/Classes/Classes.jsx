@@ -5,7 +5,7 @@ import SingleClass from "../../../components/SingleClass/SingleClass";
 
 const Classes = () => {
 	const allClasses = useLoaderData();
-	console.log(allClasses);
+
 	return (
 		<div className=" bg-purple-100">
 			<div className="max-w-7xl mx-auto py-20">

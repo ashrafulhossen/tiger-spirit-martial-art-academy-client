@@ -35,5 +35,6 @@
 }
 
 .purple-btn {
-	@apply btn bg-purple-600 hover:bg-purple-600 text-lg hover:scale-110 text-white disabled:bg-purple-500 disabled:text-white disabled:text-opacity-80 disabled:border disabled:border-purple-600
+	@apply btn bg-purple-600 hover:bg-purple-600 text-lg hover:scale-110 text-white disabled:bg-red-500 disabled:text-white disabled:text-opacity-80 disabled:border disabled:border-red-700;
 }
+
