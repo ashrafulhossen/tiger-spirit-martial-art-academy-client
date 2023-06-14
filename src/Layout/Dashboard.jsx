@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import AdminDashboard from "../Page/Dashboard/AdminDashboard/AdminDashboard";
 import InstructorDashboard from "../Page/Dashboard/InstructorDashboard/InstructorDashboard";
+import StudentDashboard from "../Page/Dashboard/StudentDashboard/StudentDashboard";
 
 const Dashboard = () => {
 	const { user } = useContext(AuthContext);
@@ -10,7 +11,7 @@ const Dashboard = () => {
 
 	useEffect(() => {
 		const data = async () => {
-			const res = await fetch(`http://localhost:5000/users/${user.uid}`);
+			const res = await fetch(`https://martial-art-school-server.vercel.app/users/${user.uid}`);
 			const data = await res.json();
 			setUserRole(data.role);
 		};
@@ -18,7 +19,7 @@ const Dashboard = () => {
 	}, []);
 
 	if (userRole === "student") {
-		return <AdminDashboard />;
+		return <StudentDashboard />;
 	} else if (userRole === "instructor") {
 		return <InstructorDashboard />;
 	} else if (userRole === "admin") {

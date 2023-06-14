@@ -25,8 +25,8 @@ const AdminSingleClass = ({
 				<h4 className="text-xl font-bold">{name}</h4>
 			</td>
 			<td>
-				<h4 className="text-xl font-bold">{instructor.name}</h4>
-				<p>{instructor.email}</p>
+				<h4 className="text-xl font-bold">{instructor?.name}</h4>
+				<p>{instructor?.email}</p>
 			</td>
 			<th>
 				<p className="text-base text-zinc-600 font-semibold">

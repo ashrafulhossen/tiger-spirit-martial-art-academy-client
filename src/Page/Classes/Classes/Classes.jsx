@@ -11,10 +11,12 @@ const Classes = () => {
 	const { data: allClasses = [], isLoading } = useQuery({
 		queryKey: [],
 		queryFn: async () => {
-			const res = await secureAxios.get(`/classes`);
+			const res = await secureAxios.get(`/approvedClasses`);
 			return res.data;
 		}
 	});
+
+	console.log(allClasses);
 
 	if(isLoading) {
 		return <LoadingData/>

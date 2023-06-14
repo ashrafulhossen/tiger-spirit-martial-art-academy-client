@@ -56,7 +56,9 @@ export const router = createBrowserRouter([
 						paht: "/dashboard/instructor/classes/:classId/update",
 						element: <UpdateClass />,
 						loader: ({ params }) =>
-							fetch(`http://localhost:5000/classes/${params.classId}`)
+							fetch(
+								`https://martial-art-school-server.vercel.app/classes/${params.classId}`
+							)
 					}
 				]
 			}

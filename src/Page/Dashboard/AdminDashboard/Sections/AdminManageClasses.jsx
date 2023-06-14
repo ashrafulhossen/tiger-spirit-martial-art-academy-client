@@ -16,6 +16,8 @@ const AdminManageClasses = () => {
 		}
 	});
 
+	console.log(allClasses);
+
 	if (isLoading) {
 		return <LoadingData />;
 	}
