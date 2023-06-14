@@ -19,30 +19,30 @@ const AuthProvider = ({ children }) => {
 	const googleProvider = new GoogleAuthProvider(),
 		githubProvider = new GithubAuthProvider();
 	const [user, setUser] = useState(null);
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		setLoading(true);
 		const unsubscribe = Auth.onAuthStateChanged((user) => {
 			if (user) {
-				setLoading(false);
 				setUser(user);
 				const loggedUser = { email: user?.email };
 				const jwtToken = async () => {
-					const res = await fetch(
-						"http://localhost:5000/jwt",
-						{
-							method: "POST",
-							headers: {
-								"Content-Type": "application/json"
-							},
-							body: JSON.stringify(loggedUser)
-						}
-					);
+					const res = await fetch("http://localhost:5000/jwt", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json"
+						},
+						body: JSON.stringify(loggedUser)
+					});
 					const data = await res.json();
-					localStorage.setItem("TigerSpiritMartialArtAcademyJWT", data.token);
+					localStorage.setItem(
+						"TigerSpiritMartialArtAcademyJWT",
+						data.token
+					);
 				};
 				jwtToken();
+				setLoading(false);
 			} else {
 				setLoading(false);
 				setUser(null);

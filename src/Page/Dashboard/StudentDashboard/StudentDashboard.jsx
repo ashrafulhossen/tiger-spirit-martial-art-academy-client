@@ -2,6 +2,7 @@
 import React from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import MyEnrolledClass from "./sections/MyEnrolledClass/MyEnrolledClass";
 import MySelectedClass from "./sections/MySelectedClass/MySelectedClass";
 
 const StudentDashboard = () => {
@@ -15,7 +16,9 @@ const StudentDashboard = () => {
 				<TabPanel className="w-full">
 					<MySelectedClass />
 				</TabPanel>
-				<TabPanel className="w-full">{/* Content for Tab 2 */}</TabPanel>
+				<TabPanel className="w-full">
+					<MyEnrolledClass />
+				</TabPanel>
 			</Tabs>
 		</div>
 	);
