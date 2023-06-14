@@ -1,13 +1,29 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { Outlet, useLoaderData } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import AdminDashboard from "../Page/Dashboard/AdminDashboard/AdminDashboard";
+import InstructorDashboard from "../Page/Dashboard/InstructorDashboard/InstructorDashboard";
 
 const Dashboard = () => {
-    return (
-        <div>
-            <Outlet/>
-        </div>
-    )
-}
+	const { user } = useContext(AuthContext);
+	const [userRole, setUserRole] = useState("");
 
-export default Dashboard
+	useEffect(() => {
+		const data = async () => {
+			const res = await fetch(`http://localhost:5000/users/${user.uid}`);
+			const data = await res.json();
+			setUserRole(data.role);
+		};
+		data();
+	}, []);
+
+	if (userRole === "student") {
+		return <AdminDashboard />;
+	} else if (userRole === "instructor") {
+		return <InstructorDashboard />;
+	} else if (userRole === "admin") {
+		return <AdminDashboard />;
+	}
+};
+
+export default Dashboard;

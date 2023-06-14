@@ -1,11 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Authentication from "../Layout/Authentication";
+import Dashboard from "../Layout/Dashboard";
 import Main from "../Layout/Main";
 import Classes from "../Page/Classes/Classes/Classes";
-import {
-	default as Dashboard,
-	default as StudentDashboard
-} from "../Page/Dashboard/StudentDashboard/StudentDashboard";
+import AdminManageClasses from "../Page/Dashboard/AdminDashboard/Sections/AdminManageClasses";
+import AdminManageUsers from "../Page/Dashboard/AdminDashboard/Sections/AdminManageUsers";
+import AddClass from "../Page/Dashboard/InstructorDashboard/sections/AddClass";
+import MyClass from "../Page/Dashboard/InstructorDashboard/sections/MyClass";
+import UpdateClass from "../Page/Dashboard/InstructorDashboard/sections/UpdateClass";
 import Home from "../Page/Home/Home/Home";
 import Instructors from "../Page/Instructors/Instructors/Instructors";
 import Login from "../Page/Login/Login";
@@ -20,13 +22,11 @@ export const router = createBrowserRouter([
 			{ path: "/", element: <Home /> },
 			{
 				path: "/instructors",
-				element: <Instructors />,
-				loader: () => fetch(`http://localhost:5000/instructors`)
+				element: <Instructors />
 			},
 			{
 				path: "/classes",
-				element: <Classes />,
-				loader: () => fetch(`http://localhost:5000/classes`)
+				element: <Classes />
 			},
 			{
 				path: "/dashboard",
@@ -37,16 +37,26 @@ export const router = createBrowserRouter([
 				),
 				children: [
 					{
-						path: "/dashboard",
-						element: <StudentDashboard />
+						path: "/dashboard/admin/manageClasses",
+						element: <AdminManageClasses />
 					},
 					{
-						path: "/dashboard/instructor/:user",
-						element: <StudentDashboard />
+						path: "/dashboard/admin/manageUsers",
+						element: <AdminManageUsers />
 					},
 					{
-						path: "/dashboard/admin/:user",
-						element: <StudentDashboard />
+						path: "/dashboard/instructor/addClass",
+						element: <AddClass />
+					},
+					{
+						path: "/dashboard/instructor/classes",
+						element: <MyClass />
+					},
+					{
+						paht: "/dashboard/instructor/classes/:classId/update",
+						element: <UpdateClass />,
+						loader: ({ params }) =>
+							fetch(`http://localhost:5000/classes/${params.classId}`)
 					}
 				]
 			}

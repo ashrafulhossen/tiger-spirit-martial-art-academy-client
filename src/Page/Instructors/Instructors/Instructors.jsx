@@ -1,11 +1,25 @@
+import { useQuery } from "@tanstack/react-query";
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import LoadingData from "../../../components/LoadingData/LoadingData";
 import SingleInstructor from "../../../components/SingleInstructor/SingleInstructor";
+import useSecureAxios from "../../../hook/useSecureAxios";
 
 const Instructors = () => {
-	const instructors = useLoaderData();
-	console.log(instructors);
+	const {secureAxios} = useSecureAxios();
+
+	const { data: instructors = [], isLoading } = useQuery({
+		queryKey: [],
+		queryFn: async () => {
+			const res = await secureAxios.get(`/instructors`);
+			return res.data;
+		}
+	});
+
+	if (isLoading) {
+		return <LoadingData />;
+	}
+
 	return (
 		<div className=" bg-purple-100">
 			<div className="max-w-7xl mx-auto py-20">

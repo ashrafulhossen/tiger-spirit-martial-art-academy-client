@@ -3,13 +3,16 @@ import { updateProfile } from "firebase/auth";
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { postUser } from "../../hook/usePostUser";
+import useSecureAxios from "../../hook/useSecureAxios";
 
 const Register = () => {
+	const { secureAxios } = useSecureAxios();
 	const { signUp, googleSignIn, githubSignIn } = useContext(AuthContext);
-	const userRole = "Admin";
+	const userRole = "student";
+	const navigate = useNavigate();
 	const {
 		register,
 		handleSubmit,
@@ -33,12 +36,14 @@ const Register = () => {
 				})
 					.then(() => {
 						console.log("user data updated");
-						postUser(user, userRole);
+						postUser(secureAxios, user, userRole);
+						console.log("active");
 					})
 					.catch((err) => console.log(err.message));
 
 				console.log(user);
 				reset();
+				navigate("/");
 			})
 			.catch((err) => {
 				console.log(err.message);

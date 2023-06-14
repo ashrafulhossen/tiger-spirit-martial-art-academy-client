@@ -4,9 +4,11 @@ import React, { useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import useSecureAxios from "../../hook/useSecureAxios";
 
 const SingleClass = ({ singleClass }) => {
 	const { user } = useContext(AuthContext);
+	const {secureAxios} = useSecureAxios();
 
 	const { name, image, instructor, availableSeats, price } = singleClass;
 	const [availableSeatsState, setAvailableSeatsState] =
@@ -27,7 +29,7 @@ const SingleClass = ({ singleClass }) => {
 			studentUid: user?.uid
 		};
 		const postData = async () => {
-			const res = await fetch(
+			const res = await secureAxios.post(
 				`http://localhost:5000/selectedClass/${singleClass._id}`,
 				{
 					method: "POST",
@@ -40,13 +42,12 @@ const SingleClass = ({ singleClass }) => {
 					})
 				}
 			);
-			const data = await res.json();
-			if (data.modifiedCount && data.insertedId) {
+			if (res.data.modifiedCount && res.data.insertedId) {
 				setAvailableSeatsState(availableSeats);
-			} else if (data.status) {
+			} else if (res.data.status) {
 				Swal.fire({
 					icon: "warning",
-					title: data.status,
+					title: res.data.status,
 					showConfirmButton: false,
 					timer: 1000
 				});
@@ -94,7 +95,7 @@ const SingleClass = ({ singleClass }) => {
 			<div className="card-body">
 				<h2 className="card-title text-3xl text-white">{name}</h2>
 				<p className="text-lg text-white">
-					Instructor Name: {instructor.name}
+					Instructor Name: {instructor?.name}
 				</p>
 				<p className="text-lg text-white">
 					Available Seats: {availableSeatsState}

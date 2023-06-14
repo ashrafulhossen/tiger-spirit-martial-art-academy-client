@@ -4,7 +4,8 @@
 		"name": "Karate",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad4",
-			"name": "Li Wei"
+			"name": "Li Wei",
+			"email": "liwei@gmail.com"
 		},
 		"availableSeats": 10,
 		"enroll": 21,
@@ -16,7 +17,8 @@
 		"name": "Taekwondo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad4",
-			"name": "Li Wei"
+			"name": "Li Wei",
+			"email": "liwei@gmail.com"
 		},
 		"availableSeats": 8,
 		"enroll": 21,
@@ -28,7 +30,8 @@
 		"name": "Jiu-Jitsu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad4",
-			"name": "Li Wei"
+			"name": "Li Wei",
+			"email": "liwei@gmail.com"
 		},
 		"availableSeats": 12,
 		"enroll": 21,
@@ -40,7 +43,8 @@
 		"name": "Kung Fu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad4",
-			"name": "Li Wei"
+			"name": "Li Wei",
+			"email": "liwei@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -52,7 +56,8 @@
 		"name": "Muay Thai",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad4",
-			"name": "Li Wei"
+			"name": "Li Wei",
+			"email": "liwei@gmail.com"
 		},
 		"availableSeats": 10,
 		"enroll": 21,
@@ -64,7 +69,8 @@
 		"name": "Capoeira",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad5",
-			"name": "Park Ji-hoon"
+			"name": "Park Ji-hoon",
+			"email": "parkjihoon@gmail.com"
 		},
 		"availableSeats": 12,
 		"enroll": 21,
@@ -76,7 +82,8 @@
 		"name": "Krav Maga",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad5",
-			"name": "Park Ji-hoon"
+			"name": "Park Ji-hoon",
+			"email": "parkjihoon@gmail.com"
 		},
 		"availableSeats": 9,
 		"enroll": 21,
@@ -88,7 +95,8 @@
 		"name": "Aikido",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad5",
-			"name": "Park Ji-hoon"
+			"name": "Park Ji-hoon",
+			"email": "parkjihoon@gmail.com"
 		},
 		"availableSeats": 14,
 		"enroll": 21,
@@ -100,7 +108,8 @@
 		"name": "Kickboxing",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad5",
-			"name": "Park Ji-hoon"
+			"name": "Park Ji-hoon",
+			"email": "parkjihoon@gmail.com"
 		},
 		"availableSeats": 11,
 		"enroll": 21,
@@ -112,7 +121,8 @@
 		"name": "Boxing",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad5",
-			"name": "Park Ji-hoon"
+			"name": "Park Ji-hoon",
+			"email": "parkjihoon@gmail.com"
 		},
 		"availableSeats": 10,
 		"enroll": 21,
@@ -124,7 +134,8 @@
 		"name": "Hapkido",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad6",
-			"name": "Zhang Min"
+			"name": "Zhang Min",
+			"email": "zhangmin@gmail.com"
 		},
 		"availableSeats": 12,
 		"enroll": 21,
@@ -136,7 +147,8 @@
 		"name": "Wing Chun",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad6",
-			"name": "Zhang Min"
+			"name": "Zhang Min",
+			"email": "zhangmin@gmail.com"
 		},
 		"availableSeats": 8,
 		"enroll": 21,
@@ -148,7 +160,8 @@
 		"name": "Brazilian Jiu-Jitsu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad6",
-			"name": "Zhang Min"
+			"name": "Zhang Min",
+			"email": "zhangmin@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -160,7 +173,8 @@
 		"name": "Karate-Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad6",
-			"name": "Zhang Min"
+			"name": "Zhang Min",
+			"email": "zhangmin@gmail.com"
 		},
 		"availableSeats": 10,
 		"enroll": 21,
@@ -172,7 +186,8 @@
 		"name": "Tai Chi",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad6",
-			"name": "Zhang Min"
+			"name": "Zhang Min",
+			"email": "zhangmin@gmail.com"
 		},
 		"availableSeats": 12,
 		"enroll": 21,
@@ -184,7 +199,8 @@
 		"name": "Escrima",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad7",
-			"name": "Kim Soo-ji"
+			"name": "Kim Soo-ji",
+			"email": "kimsooji@gmail.com"
 		},
 		"availableSeats": 9,
 		"enroll": 21,
@@ -196,7 +212,8 @@
 		"name": "Kendo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad7",
-			"name": "Kim Soo-ji"
+			"name": "Kim Soo-ji",
+			"email": "kimsooji@gmail.com"
 		},
 		"availableSeats": 14,
 		"enroll": 21,
@@ -208,7 +225,8 @@
 		"name": "Jeet Kune Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad7",
-			"name": "Kim Soo-ji"
+			"name": "Kim Soo-ji",
+			"email": "kimsooji@gmail.com"
 		},
 		"availableSeats": 12,
 		"enroll": 21,
@@ -220,7 +238,8 @@
 		"name": "Silat",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad7",
-			"name": "Kim Soo-ji"
+			"name": "Kim Soo-ji",
+			"email": "kimsooji@gmail.com"
 		},
 		"availableSeats": 11,
 		"enroll": 21,
@@ -232,7 +251,8 @@
 		"name": "Taekkyeon",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad7",
-			"name": "Kim Soo-ji"
+			"name": "Kim Soo-ji",
+			"email": "kimsooji@gmail.com"
 		},
 		"availableSeats": 20,
 		"enroll": 21,
@@ -244,7 +264,8 @@
 		"name": "Kalaripayattu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad8",
-			"name": "Wang Xiu"
+			"name": "Wang Xiu",
+			"email": "wangxiu@gmail.com"
 		},
 		"availableSeats": 18,
 		"enroll": 21,
@@ -256,7 +277,8 @@
 		"name": "Sambo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad8",
-			"name": "Wang Xiu"
+			"name": "Wang Xiu",
+			"email": "wangxiu@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -268,7 +290,8 @@
 		"name": "Ninjutsu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad8",
-			"name": "Wang Xiu"
+			"name": "Wang Xiu",
+			"email": "wangxiu@gmail.com"
 		},
 		"availableSeats": 21,
 		"enroll": 21,
@@ -280,7 +303,8 @@
 		"name": "Muay Boran",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad8",
-			"name": "Wang Xiu"
+			"name": "Wang Xiu",
+			"email": "wangxiu@gmail.com"
 		},
 		"availableSeats": 25,
 		"enroll": 21,
@@ -292,7 +316,8 @@
 		"name": "Pencak Silat",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad8",
-			"name": "Wang Xiu"
+			"name": "Wang Xiu",
+			"email": "wangxiu@gmail.com"
 		},
 		"availableSeats": 16,
 		"enroll": 21,
@@ -304,7 +329,8 @@
 		"name": "Savate",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad9",
-			"name": "Choi Min-jun"
+			"name": "Choi Min-jun",
+			"email": "choiminjun@gmail.com"
 		},
 		"availableSeats": 14,
 		"enroll": 21,
@@ -316,7 +342,8 @@
 		"name": "Eskrima",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad9",
-			"name": "Choi Min-jun"
+			"name": "Choi Min-jun",
+			"email": "choiminjun@gmail.com"
 		},
 		"availableSeats": 26,
 		"enroll": 21,
@@ -329,7 +356,8 @@
 		"name": "Hwa Rang Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad9",
-			"name": "Choi Min-jun"
+			"name": "Choi Min-jun",
+			"email": "choiminjun@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -342,7 +370,8 @@
 		"name": "Kajukenbo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad9",
-			"name": "Choi Min-jun"
+			"name": "Choi Min-jun",
+			"email": "choiminjun@gmail.com"
 		},
 		"availableSeats": 13,
 		"enroll": 21,
@@ -355,7 +384,8 @@
 		"name": "Shorinji Kempo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ad9",
-			"name": "Choi Min-jun"
+			"name": "Choi Min-jun",
+			"email": "choiminjun@gmail.com"
 		},
 		"availableSeats": 18,
 		"enroll": 21,
@@ -368,7 +398,8 @@
 		"name": "Wushu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ada",
-			"name": "Liu Mei"
+			"name": "Liu Mei",
+			"email": "liumei@gmail.com"
 		},
 		"availableSeats": 17,
 		"enroll": 21,
@@ -380,7 +411,8 @@
 		"name": "Bokator",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ada",
-			"name": "Liu Mei"
+			"name": "Liu Mei",
+			"email": "liumei@gmail.com"
 		},
 		"availableSeats": 37,
 		"enroll": 21,
@@ -392,7 +424,8 @@
 		"name": "Shotokan",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ada",
-			"name": "Liu Mei"
+			"name": "Liu Mei",
+			"email": "liumei@gmail.com"
 		},
 		"availableSeats": 16,
 		"enroll": 21,
@@ -404,7 +437,8 @@
 		"name": "Kenjutsu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ada",
-			"name": "Liu Mei"
+			"name": "Liu Mei",
+			"email": "liumei@gmail.com"
 		},
 		"availableSeats": 28,
 		"enroll": 21,
@@ -416,7 +450,8 @@
 		"name": "Sanshou",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ada",
-			"name": "Liu Mei"
+			"name": "Liu Mei",
+			"email": "liumei@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -428,7 +463,8 @@
 		"name": "Krabi Krabong",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adb",
-			"name": "Lee Joo-hyun"
+			"name": "Lee Joo-hyun",
+			"email": "leejoohyun@gmail.com"
 		},
 		"availableSeats": 31,
 		"enroll": 21,
@@ -440,7 +476,8 @@
 		"name": "Shuai Jiao",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adb",
-			"name": "Lee Joo-hyun"
+			"name": "Lee Joo-hyun",
+			"email": "leejoohyun@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -452,7 +489,8 @@
 		"name": "Tang Soo Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adb",
-			"name": "Lee Joo-hyun"
+			"name": "Lee Joo-hyun",
+			"email": "leejoohyun@gmail.com"
 		},
 		"availableSeats": 21,
 		"enroll": 21,
@@ -464,7 +502,8 @@
 		"name": "Okinawan Kobudo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adb",
-			"name": "Lee Joo-hyun"
+			"name": "Lee Joo-hyun",
+			"email": "leejoohyun@gmail.com"
 		},
 		"availableSeats": 38,
 		"enroll": 21,
@@ -476,7 +515,8 @@
 		"name": "Vovinam",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adb",
-			"name": "Lee Joo-hyun"
+			"name": "Lee Joo-hyun",
+			"email": "leejoohyun@gmail.com"
 		},
 		"availableSeats": 12,
 		"enroll": 21,
@@ -488,7 +528,8 @@
 		"name": "Goju-Ryu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adc",
-			"name": "Yang Wei"
+			"name": "Yang Wei",
+			"email": "yangwei@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -500,7 +541,8 @@
 		"name": "Lethwei",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adc",
-			"name": "Yang Wei"
+			"name": "Yang Wei",
+			"email": "yangwei@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -512,7 +554,8 @@
 		"name": "Shito-Ryu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adc",
-			"name": "Yang Wei"
+			"name": "Yang Wei",
+			"email": "yangwei@gmail.com"
 		},
 		"availableSeats": 14,
 		"enroll": 21,
@@ -524,7 +567,8 @@
 		"name": "Gatka",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adc",
-			"name": "Yang Wei"
+			"name": "Yang Wei",
+			"email": "yangwei@gmail.com"
 		},
 		"availableSeats": 48,
 		"enroll": 21,
@@ -536,7 +580,8 @@
 		"name": "Kuk Sool Won",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adc",
-			"name": "Yang Wei"
+			"name": "Yang Wei",
+			"email": "yangwei@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -548,7 +593,8 @@
 		"name": "Shidokan",
 		"instructor": {
 			"_id": "648588f3da281b37a8293add",
-			"name": "Kim Eun-ji"
+			"name": "Kim Eun-ji",
+			"email": "kimeunji@gmail.com"
 		},
 		"availableSeats": 20,
 		"enroll": 21,
@@ -560,7 +606,8 @@
 		"name": "Systema",
 		"instructor": {
 			"_id": "648588f3da281b37a8293add",
-			"name": "Kim Eun-ji"
+			"name": "Kim Eun-ji",
+			"email": "kimeunji@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -572,7 +619,8 @@
 		"name": "Arnis",
 		"instructor": {
 			"_id": "648588f3da281b37a8293add",
-			"name": "Kim Eun-ji"
+			"name": "Kim Eun-ji",
+			"email": "kimeunji@gmail.com"
 		},
 		"availableSeats": 7,
 		"enroll": 21,
@@ -584,7 +632,8 @@
 		"name": "Shorin-Ryu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293add",
-			"name": "Kim Eun-ji"
+			"name": "Kim Eun-ji",
+			"email": "kimeunji@gmail.com"
 		},
 		"availableSeats": 32,
 		"enroll": 21,
@@ -596,7 +645,8 @@
 		"name": "Bando",
 		"instructor": {
 			"_id": "648588f3da281b37a8293add",
-			"name": "Kim Eun-ji"
+			"name": "Kim Eun-ji",
+			"email": "kimeunji@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -608,7 +658,8 @@
 		"name": "Bartitsu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ade",
-			"name": "Chen Li"
+			"name": "Chen Li",
+			"email": "chenli@gmail.com"
 		},
 		"availableSeats": 18,
 		"enroll": 21,
@@ -620,7 +671,8 @@
 		"name": "Kyudo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ade",
-			"name": "Chen Li"
+			"name": "Chen Li",
+			"email": "chenli@gmail.com"
 		},
 		"availableSeats": 29,
 		"enroll": 21,
@@ -632,7 +684,8 @@
 		"name": "Haidong Gumdo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ade",
-			"name": "Chen Li"
+			"name": "Chen Li",
+			"email": "chenli@gmail.com"
 		},
 		"availableSeats": 33,
 		"enroll": 21,
@@ -644,7 +697,8 @@
 		"name": "Glima",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ade",
-			"name": "Chen Li"
+			"name": "Chen Li",
+			"email": "chenli@gmail.com"
 		},
 		"availableSeats": 7,
 		"enroll": 21,
@@ -656,7 +710,8 @@
 		"name": "Vajra Mushti",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ade",
-			"name": "Chen Li"
+			"name": "Chen Li",
+			"email": "chenli@gmail.com"
 		},
 		"availableSeats": 18,
 		"enroll": 21,
@@ -668,7 +723,8 @@
 		"name": "Soo Bahk Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adf",
-			"name": "Kwon Min-ji"
+			"name": "Kwon Min-ji",
+			"email": "kwonminji@gmail.com"
 		},
 		"availableSeats": 14,
 		"enroll": 21,
@@ -680,7 +736,8 @@
 		"name": "Bujinkan",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adf",
-			"name": "Kwon Min-ji"
+			"name": "Kwon Min-ji",
+			"email": "kwonminji@gmail.com"
 		},
 		"availableSeats": 18,
 		"enroll": 21,
@@ -692,7 +749,8 @@
 		"name": "Kobudo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adf",
-			"name": "Kwon Min-ji"
+			"name": "Kwon Min-ji",
+			"email": "kwonminji@gmail.com"
 		},
 		"availableSeats": 38,
 		"enroll": 21,
@@ -704,7 +762,8 @@
 		"name": "Kumdo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adf",
-			"name": "Kwon Min-ji"
+			"name": "Kwon Min-ji",
+			"email": "kwonminji@gmail.com"
 		},
 		"availableSeats": 53,
 		"enroll": 21,
@@ -716,7 +775,8 @@
 		"name": "Kombatan",
 		"instructor": {
 			"_id": "648588f3da281b37a8293adf",
-			"name": "Kwon Min-ji"
+			"name": "Kwon Min-ji",
+			"email": "kwonminji@gmail.com"
 		},
 		"availableSeats": 11,
 		"enroll": 21,
@@ -728,7 +788,8 @@
 		"name": "Kinomichi",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae0",
-			"name": "Sun Xiao"
+			"name": "Sun Xiao",
+			"email": "sunxiao@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -740,7 +801,8 @@
 		"name": "Yoseikan Budo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae0",
-			"name": "Sun Xiao"
+			"name": "Sun Xiao",
+			"email": "sunxiao@gmail.com"
 		},
 		"availableSeats": 48,
 		"enroll": 21,
@@ -752,7 +814,8 @@
 		"name": "Han Mu Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae0",
-			"name": "Sun Xiao"
+			"name": "Sun Xiao",
+			"email": "sunxiao@gmail.com"
 		},
 		"availableSeats": 41,
 		"enroll": 21,
@@ -764,7 +827,8 @@
 		"name": "Nippon Kempo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae0",
-			"name": "Sun Xiao"
+			"name": "Sun Xiao",
+			"email": "sunxiao@gmail.com"
 		},
 		"availableSeats": 54,
 		"enroll": 21,
@@ -776,7 +840,8 @@
 		"name": "Pankration",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae0",
-			"name": "Sun Xiao"
+			"name": "Sun Xiao",
+			"email": "sunxiao@gmail.com"
 		},
 		"availableSeats": 18,
 		"enroll": 21,
@@ -788,7 +853,8 @@
 		"name": "Kyokushin",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae1",
-			"name": "Jung Hyun-woo"
+			"name": "Jung Hyun-woo",
+			"email": "junghyunwoo@gmail.com"
 		},
 		"availableSeats": 5,
 		"enroll": 21,
@@ -800,7 +866,8 @@
 		"name": "Kun Khmer",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae1",
-			"name": "Jung Hyun-woo"
+			"name": "Jung Hyun-woo",
+			"email": "junghyunwoo@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -812,7 +879,8 @@
 		"name": "Pehlwani",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae1",
-			"name": "Jung Hyun-woo"
+			"name": "Jung Hyun-woo",
+			"email": "junghyunwoo@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -824,7 +892,8 @@
 		"name": "American Kenpo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae1",
-			"name": "Jung Hyun-woo"
+			"name": "Jung Hyun-woo",
+			"email": "junghyunwoo@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -836,7 +905,8 @@
 		"name": "Choi Kwang-Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae1",
-			"name": "Jung Hyun-woo"
+			"name": "Jung Hyun-woo",
+			"email": "junghyunwoo@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -848,7 +918,8 @@
 		"name": "Kukkiwon Taekwondo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae2",
-			"name": "Huang Ying"
+			"name": "Huang Ying",
+			"email": "huangying@gmail.com"
 		},
 		"availableSeats": 23,
 		"enroll": 21,
@@ -860,7 +931,8 @@
 		"name": "Yaw-Yan",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae2",
-			"name": "Huang Ying"
+			"name": "Huang Ying",
+			"email": "huangying@gmail.com"
 		},
 		"availableSeats": 15,
 		"enroll": 21,
@@ -872,7 +944,8 @@
 		"name": "Shorin Ryu",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae2",
-			"name": "Huang Ying"
+			"name": "Huang Ying",
+			"email": "huangying@gmail.com"
 		},
 		"availableSeats": 35,
 		"enroll": 21,
@@ -884,7 +957,8 @@
 		"name": "Quan Ki Do",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae2",
-			"name": "Huang Ying"
+			"name": "Huang Ying",
+			"email": "huangying@gmail.com"
 		},
 		"availableSeats": 16,
 		"enroll": 21,
@@ -896,7 +970,8 @@
 		"name": "Hwarangdo",
 		"instructor": {
 			"_id": "648588f3da281b37a8293ae2",
-			"name": "Huang Ying"
+			"name": "Huang Ying",
+			"email": "huangying@gmail.com"
 		},
 		"availableSeats": 13,
 		"enroll": 21,

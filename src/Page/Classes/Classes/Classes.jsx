@@ -1,10 +1,24 @@
+import { useQuery } from "@tanstack/react-query";
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { useLoaderData } from "react-router-dom";
 import SingleClass from "../../../components/SingleClass/SingleClass";
+import useSecureAxios from "../../../hook/useSecureAxios";
+import LoadingData from "../../../components/LoadingData/LoadingData";
 
 const Classes = () => {
-	const allClasses = useLoaderData();
+	const {secureAxios} = useSecureAxios();
+
+	const { data: allClasses = [], isLoading } = useQuery({
+		queryKey: [],
+		queryFn: async () => {
+			const res = await secureAxios.get(`/classes`);
+			return res.data;
+		}
+	});
+
+	if(isLoading) {
+		return <LoadingData/>
+	}
 
 	return (
 		<div className=" bg-purple-100">

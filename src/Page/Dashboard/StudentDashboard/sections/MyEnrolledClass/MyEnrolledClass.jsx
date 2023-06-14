@@ -8,7 +8,7 @@ import SingleEnrolledClass from "./SingleEnrolledClass";
 const MyEnrolledClass = () => {
 	const { user } = useContext(AuthContext);
 	const [secureAxios] = useSecureAxios();
-	// use secure axios with react query
+	
 	const { data: allEnrolledClass = [] } = useQuery({
 		queryKey: [],
 		queryFn: async () => {
